@@ -2,12 +2,12 @@ import React from 'react'
 import { mainLinks, secondaryLinks, textTerms } from '../utils/IconsSidebar'
 import CardSidebar from './CardSidebar'
 
-const Sidebar = () => {
+const Sidebar = ({selectedCategory, setSelectedCategory}) => {
   return (
-    <ul className='w-1/4 gradient-01 px-2 py-3 gap-4 flex flex-col border-r-8 border-black lg:w-1/6 h-screen overflow-auto'>
+    <ul className='w-1/4 gradient-01 px-2 py-3 gap-4 flex flex-col border-r-8 border-black lg:w-1/6 h-[92vh] overflow-auto'>
 
       {mainLinks.map((icon, i) => (
-        <CardSidebar key={i} icon={icon} />
+        <CardSidebar setSelectedCategory={setSelectedCategory}  key={i} icon={icon} />
       ))}
       <hr className='border-4 border-black my-4' />
 

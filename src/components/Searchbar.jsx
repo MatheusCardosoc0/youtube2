@@ -13,7 +13,8 @@ const Searchbar = () => {
 
       <div className="flex items-center bg-gradient-to-tr from-yellow-400 via-yellow-600 to-yellow-700 rounded-r-lg px-1">
         
-        <input type={'search'} className="bg-transparent outline-none" />
+        <input type={'search'} className="bg-transparent outline-none placeholder:text-black"
+        placeholder='Buscar' />
 
         <AiOutlineClose />
       </div>

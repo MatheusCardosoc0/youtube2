@@ -10,19 +10,12 @@ import VideoDetail from './components/VideoDetail'
 const App = () => {
   return (
     <BrowserRouter>
-      <main className="overflow-hidden">
-        <Navbar />
-        <div className="flex">
-          <Sidebar />
-
-          <Routes>
-            <Route path="/" element={<Feed />} />
-            <Route path="/video/:id" element={<VideoDetail />} />
-            <Route path="/channel/:id" element={<ChannelDetail />} />
-            <Route path="/search/:searchTerm" element={<SearchFeed />} />
-          </Routes>
-        </div>
-      </main>
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="/video/:id" element={<VideoDetail />} />
+        <Route path="/channel/:id" element={<ChannelDetail />} />
+        <Route path="/search/:searchTerm" element={<SearchFeed />} />
+      </Routes>
     </BrowserRouter>
   )
 }

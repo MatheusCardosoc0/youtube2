@@ -6,28 +6,29 @@ import {
   MdSettings, MdOutlinedFlag,
   MdOutlineHelpOutline, MdOutlineFeedback,
   MdOutlineSportsVolleyball,
-  MdOutlineFlag
+  MdOutlineFlag, MdSchool
 } from 'react-icons/md'
 import { TbMusic, TbDeviceGamepad2 } from 'react-icons/tb'
-import { FaRegCompass } from 'react-icons/fa'
+import { FaRegCompass, FaMicrophone } from 'react-icons/fa'
 import { GiFilmStrip } from 'react-icons/gi'
+import {BsController, BsMusicNote} from 'react-icons/bs'
 
 export const mainLinks = [
   {
-    icon: <MdHomeFilled className='text-xl' />,
-    name: "Home"
+    icon: <MdSchool className='text-xl' />,
+    name: "Education"
   },
   {
-    icon: <FaRegCompass className='text-xl' />,
-    name: "Explore"
+    icon: <FaMicrophone className='text-xl' />,
+    name: "Podcast"
   },
   {
-    icon: <MdOutlineSlowMotionVideo className='text-xl' />,
-    name: "Shorts"
+    icon: <BsController className='text-xl' />,
+    name: "Gaming"
   },
   {
-    icon: <MdSubscriptions className='text-xl' />,
-    name: "Subscription"
+    icon: <BsMusicNote className='text-xl' />,
+    name: "Music"
   },
 ]
 
