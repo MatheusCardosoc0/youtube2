@@ -37,3 +37,17 @@ body{
   );
   transition: all 2s;
 }
+
+.gradient-02 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(157, 157, 157, 0.881) 25%,
+    rgba(116, 113, 108, 0.928) 26%,
+    rgba(56, 56, 55, 0.804) 39%,
+    rgba(44, 43, 40, 0.811) 50%,
+    rgba(56, 56, 53, 0.834) 61%,
+    rgb(80, 75, 75) 74%,
+    rgb(88, 87, 85) 100%
+  );
+  transition: all 2s;
+}

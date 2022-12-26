@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChannelCard = () => {
+const ChannelCard = ({channel}) => {
   return (
     <div>ChannelCard</div>
   )

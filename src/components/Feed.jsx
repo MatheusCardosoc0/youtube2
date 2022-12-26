@@ -22,7 +22,7 @@ const Feed = () => {
       <div className="flex">
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
 
-        <div className='overflow-y-scroll h-[92vh] flex flex-col'>
+        <div className='overflow-y-scroll h-[92vh] flex flex-col w-[80%]'>
 
           <h2 className="p-2 text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_black]">
             <b className="drop-shadow-[1px_1px_1px_yellow] text-black">{selectedCategory}</b>
