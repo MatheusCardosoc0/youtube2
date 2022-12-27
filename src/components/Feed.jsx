@@ -25,7 +25,7 @@ const Feed = () => {
         <div className='overflow-y-scroll h-[92vh] flex flex-col w-[80%]'>
 
           <h2 className="p-2 text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_black]">
-            <b className="drop-shadow-[1px_1px_1px_yellow] text-black">{selectedCategory}</b>
+            <b className="drop-shadow-[1px_1px_1px_yellow] text-white">{selectedCategory}</b>
             Videos
           </h2>
 

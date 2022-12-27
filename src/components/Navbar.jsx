@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to={"/"}>
           <div className='flex gap-1 items-center justify-center'>
             <BsYoutube className='text-yellow-500 drop-shadow-[2px_1px_1px_black]' />
-            <span className='text-yellow-500 drop-shadow-[1px_1px_1px_black]'>Youtube</span>
+            <span className='text-yellow-500 drop-shadow-[1px_1px_1px_black]'>Goldentube</span>
           </div>
         </Link>
       </div>
