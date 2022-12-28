@@ -4,6 +4,9 @@ import { demoProfilePicture } from '../utils/constants'
 import { SiVerizon } from 'react-icons/si'
 
 const ChannelCard = ({ channel }) => {
+
+  if(!channel) return 'Carregando...'
+
   return (
     <Link
       to={`/channel/${channel?.id?.channelId}`}
