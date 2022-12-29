@@ -6,11 +6,12 @@ import Videos from './Videos'
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState('New')
-  const [videos,setVideos] = useState([])
+  const [videos, setVideos] = useState([])
 
   useEffect(() => {
-    fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
-    .then((data) => setVideos(data.items))
+    fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then(data =>
+      setVideos(data.items)
+    )
   }, [selectedCategory])
 
   console.log(videos)
@@ -19,19 +20,24 @@ const Feed = () => {
     <main className="overflow-hidden">
       <Navbar />
 
-      <div className="flex">
-        <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      <div className="flex justify-center md:justify-start">
+      
+          <Sidebar
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
+        
 
-        <div className='overflow-y-scroll h-[92vh] flex flex-col w-[80%]'>
-
+        <div className="overflow-y-scroll h-[92vh] flex flex-col w-[80%]">
           <h2 className="p-2 text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_black]">
-            <b className="drop-shadow-[1px_1px_1px_yellow] text-white">{selectedCategory}</b>
+            <b className="drop-shadow-[1px_1px_1px_yellow] text-white">
+              {selectedCategory}
+            </b>
             Videos
           </h2>
 
           <Videos videos={videos} />
         </div>
-
       </div>
     </main>
   )

@@ -14,7 +14,7 @@ const VideoCard = ({
   }
 }) => {
   return (
-    <section className="flex flex-col pb-8 gradient-02 w-[358px] rounded-br-[40px] border-r-[10px] border-t-[10px] border-t-yellow-600 border-yellow-500 shadow-[16px_16px_12px_black] rounded-tl-[13px]">
+    <section className="flex flex-col pb-8 gradient-02 md:w-[358px] w-[200px] rounded-br-[40px] border-r-[10px] border-t-[10px] border-t-yellow-600 border-yellow-500 shadow-[16px_16px_12px_black] rounded-tl-[13px]">
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <img
           src={snippet?.thumbnails?.high?.url}

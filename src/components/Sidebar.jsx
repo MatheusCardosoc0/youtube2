@@ -4,7 +4,7 @@ import CardSidebar from './CardSidebar'
 
 const Sidebar = ({selectedCategory, setSelectedCategory}) => {
   return (
-    <ul className='w-1/4 gradient-01 px-2 py-3 gap-4 flex flex-col border-r-8 border-black lg:w-1/6 h-[92vh] overflow-auto'>
+    <ul className='w-1/4 gradient-01 px-2 py-3 gap-4 md:flex flex-col border-r-8 border-black lg:w-1/6 h-[92vh] overflow-auto hidden'>
 
       {mainLinks.map((icon, i) => (
         <CardSidebar setSelectedCategory={setSelectedCategory}  key={i} icon={icon} />

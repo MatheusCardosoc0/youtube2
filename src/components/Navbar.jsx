@@ -9,10 +9,10 @@ import Searchbar from './Searchbar'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center px-14 h-14  opacity-95 sticky border-b-2 border-yellow-600 shadow-[1px_5px_30px_#d6af00] bg-[#ffffff]'>
+    <nav className='flex justify-between items-center px-14 h-14  opacity-95 sticky border-b-2 border-yellow-600 shadow-[1px_5px_30px_#d6af00] bg-[#ffffff] flex-col md:flex-row'>
       <div className='flex items-center text-3xl gap-8'>
 
-        <GiHamburgerMenu className='text-yellow-600 drop-shadow-[3px_1px_1px_black]' />
+        <GiHamburgerMenu className='text-yellow-600 drop-shadow-[3px_1px_1px_black] hidden md:block' />
 
         <Link to={"/"}>
           <div className='flex gap-1 items-center justify-center'>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <Searchbar />
       </div>
 
-      <div className='flex gap-4'>
+      <div className='md:flex gap-4 hidden'>
         <div className='text-xl p-3 bg-gradient-to-b from from-yellow-300 to-yellow-600 rounded-full'>
           <TiMicrophone />
         </div>
